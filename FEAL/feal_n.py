@@ -84,5 +84,5 @@ class Feal_N():
 			R = xor(R,L)
 			L,R = split(xor(L+R,self.subkey[-2*8:-8]))
 			result += L+R
-		return bytes(result).strip(b'\x00')
+		return bytes(result)
 

@@ -111,4 +111,5 @@ class Feal_NX():
 			L,R = split(xor(L+R,self.subkey[2*self.N:2*self.N+8]))
 
 			result += L+R
-		return bytes(result).strip(b'\x00')
+
+		return bytes(result)
